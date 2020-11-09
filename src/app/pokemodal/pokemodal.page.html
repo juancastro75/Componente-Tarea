@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 35px;">{{nombrePoke}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closePokeModal()">
+        <ion-icon name="close-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-img [src]="imgPoke" style="align-items: center;"></ion-img>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list-header color="primary">
+          <h2>Habilidad</h2>
+        </ion-list-header>
+        <ion-list>
+          <ion-item *ngFor="let habilidad of AbilityPoke" >
+            <h4>{{habilidad.ability.name}}</h4>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list-header color="primary">
+          <h2>Tipo</h2>
+        </ion-list-header>
+        <ion-list>
+          <ion-item *ngFor="let tipo of TypePoke" >
+            <h4>{{tipo.type.name}}</h4>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
