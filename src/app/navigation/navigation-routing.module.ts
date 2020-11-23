@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { PokemodalPage } from './pokemodal.page';
+import { NavigationPage } from './navigation.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: PokemodalPage
+    component: NavigationPage
   }
 ];
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PokemodalPageRoutingModule {}
+export class NavigationPageRoutingModule {}

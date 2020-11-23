@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
-import { PokemodalPageRoutingModule } from './pokemodal-routing.module';
-
-import { PokemodalPage } from './pokemodal.page';
+import { NavigationPageRoutingModule } from './navigation-routing.module';
+import { NavigationPage } from './navigation.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PokemodalPageRoutingModule
+    NavigationPageRoutingModule
   ],
-  declarations: [PokemodalPage]
+  declarations: [NavigationPage],
+  entryComponents: []
 })
-export class PokemodalPageModule {}
+export class NavigationPageModule {}

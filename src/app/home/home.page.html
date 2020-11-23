@@ -1,16 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="danger">
-      <ion-img [src]="logo" style="height: 70px;"></ion-img>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
-  <ion-row>
-    <ion-col size="6" *ngFor="let poke of pokemon">
-      <app-comp PokeName="{{poke.name}}"></app-comp>
-  </ion-col>
-  </ion-row>
-  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
-    <ion-infinite-scroll-content loadingSpinner="circular"></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
+  <div id="container">
+    <strong>Bienvenido a mi app</strong>
+    <p>Navega por donde tu quieras</p>
+  </div>
 </ion-content>
+

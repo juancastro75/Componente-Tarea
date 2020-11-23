@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { PokemodalPage } from './pokemodal.page';
+import { LinksComponent } from './links.component';
 
-describe('PokemodalPage', () => {
-  let component: PokemodalPage;
-  let fixture: ComponentFixture<PokemodalPage>;
+describe('LinksComponent', () => {
+  let component: LinksComponent;
+  let fixture: ComponentFixture<LinksComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PokemodalPage ],
+      declarations: [ LinksComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PokemodalPage);
+    fixture = TestBed.createComponent(LinksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

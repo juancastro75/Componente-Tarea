@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="menu1"></ion-menu-button>
+  </ion-buttons>
+    <ion-title>About</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div id="container">
+    <ion-button (click)="pressedButton()">Presioname</ion-button>
+    <ion-button color="warning" *ngIf="buttonHasPressed">Ola k ase</ion-button>
+  </div>
+</ion-content>
+
